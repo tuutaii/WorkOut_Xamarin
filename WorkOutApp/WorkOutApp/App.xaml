@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="WorkOutApp.App">
+    <Application.Resources>
+        <Style TargetType="Label">
+            <Setter Property="FontSize" Value="Large"/>
+            <Setter Property="HorizontalOptions" Value="Center"/>
+        </Style>
+
+        <Style x:Key="NormalFont" TargetType="Label">
+            <Setter Property="FontFamily"  Value="VarelaRound-Regular.ttf#VarelaRound-Regular.ttf"/>
+        </Style>
+        <Style x:Key="BoldFont" TargetType="Label">
+            <Setter Property="FontFamily" Value="BalsamiqSans-Bold.ttf#BalsamiqSans-Bold.ttf"/>
+        </Style>
+
+        <Style x:Key="TitleFont" TargetType="Label">
+            <Setter Property="FontFamily" Value="Oswald-VariableFont_wght.ttf#Oswald-VariableFont_wght.ttf"/>
+        </Style>
+
+        <Style x:Key="TitleFont1" TargetType="Label">
+            <Setter Property="FontFamily" Value="AlfaSlabOne-Regular.ttf#AlfaSlabOne-Regular.ttf"/>
+        </Style>
+
+        <ResourceDictionary>
+            <Style TargetType="NavigationPage">
+                <Setter Property="BarBackgroundColor" Value="#d8202c"/>
+            </Style>
+        </ResourceDictionary>
+
+    </Application.Resources> 
+</Application>

@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="WorkOutApp.SignUpPage"
+             NavigationPage.HasNavigationBar="false"
+             BackgroundImageSource="loginbanner2.jfif">
+
+    <StackLayout >
+        <Grid>
+
+            <StackLayout Padding="0" Margin="10,100,10,0" HorizontalOptions="FillAndExpand">
+                <Frame  BackgroundColor="Transparent" HeightRequest="650" BorderColor="Black" CornerRadius="20" HasShadow="True" Padding="0" Margin="0">
+
+                    <StackLayout>
+
+                        <StackLayout Margin="10">
+                            <Label Text="ĐĂNG KÝ" Style="{StaticResource TitleFont}" FontSize="50" TextColor="Black" HorizontalOptions="CenterAndExpand" FontAttributes="Bold"/>
+                        </StackLayout>
+
+                        <StackLayout Padding="0" Margin="15,10">
+
+                            <Frame BackgroundColor="Transparent" HasShadow="True" BorderColor="Black" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="10">
+                                <StackLayout Orientation="Horizontal">
+                                    <Frame BackgroundColor="SkyBlue" HeightRequest="40" WidthRequest="40" CornerRadius="30" Padding="0" Margin="5">
+                                        <Image Source="mail.jpeg" Aspect="AspectFill" Margin="0"/>
+                                    </Frame>
+                                    <Entry Placeholder="Email" 
+                                           x:Name="entryEmail"
+                                           Style="{StaticResource NormalFont}"  
+                                           PlaceholderColor="Black" 
+                                           FontSize="16"   
+                                           TextColor="Black"
+                                           FontAttributes="None" 
+                                           HorizontalOptions="FillAndExpand" 
+                                           Margin="0,0,20,0"/>
+                                </StackLayout>
+                            </Frame>
+
+                            <Frame BackgroundColor="Transparent" BorderColor="Black" Margin="0,15,0,0" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="10">
+                                <StackLayout Orientation="Horizontal">
+                                    <Frame BackgroundColor="SkyBlue" HeightRequest="40" WidthRequest="40" CornerRadius="30" Padding="0" Margin="5">
+                                        <Image Source="https://www.findool.com/images/avatars/avatar.png" Aspect="AspectFill" Margin="0"/>
+                                    </Frame>
+                                    <Entry Placeholder="Tên tài khoản" 
+                                           x:Name="entryUsername"
+                                           Style="{StaticResource NormalFont}" 
+                                           PlaceholderColor="Black" 
+                                           FontSize="16"  
+                                           TextColor="Black" 
+                                           FontAttributes="None" 
+                                           HorizontalOptions="FillAndExpand"
+                                           Margin="0,0,20,0"/>
+                                </StackLayout>
+                            </Frame>
+
+                                        
+                            <Frame BackgroundColor="Transparent" BorderColor="Black" Margin="0,15,0,0" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="10">
+                                <StackLayout Orientation="Horizontal">
+                                    <Frame BackgroundColor="SkyBlue" HeightRequest="40" WidthRequest="40" CornerRadius="30" Padding="0" Margin="5">
+                                        <Image Source="https://images.all-free-download.com/images/graphicthumb/lock_icon_6813906.jpg" Aspect="AspectFill" Margin="0"/>
+                                    </Frame>
+
+                                    <Entry Placeholder="Mật khẩu" 
+                                           x:Name="entryPassword"
+                                           Style="{StaticResource NormalFont}" 
+                                           PlaceholderColor="Black" 
+                                           FontSize="16"  
+                                           IsPassword="True" 
+                                           TextColor="Black"
+                                           FontAttributes="None" 
+                                           HorizontalOptions="FillAndExpand"
+                                           Margin="0,0,20,0"/>
+                                </StackLayout>
+                            </Frame>
+                            
+                            <Frame BackgroundColor="Transparent" BorderColor="Black" Margin="0,15,0,15" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="10">
+                                <StackLayout Orientation="Horizontal">
+                                    <Frame BackgroundColor="SkyBlue" HeightRequest="40" WidthRequest="40" CornerRadius="30" Padding="0" Margin="5">
+                                        <Image Source="https://images.all-free-download.com/images/graphicthumb/lock_icon_6813906.jpg" Aspect="AspectFill" Margin="0"/>
+                                    </Frame>
+
+                                    <Entry Placeholder="Xác nhận mẩt khẩu" 
+                                           x:Name="entryConfirmPassword"
+                                           Style="{StaticResource NormalFont}"  
+                                           PlaceholderColor="Black" 
+                                           FontSize="16"  
+                                           IsPassword="True" 
+                                           TextColor="Black"  
+                                           HorizontalOptions="FillAndExpand" 
+                                           Margin="0,0,20,0"/>
+                                </StackLayout>
+                            </Frame>
+
+                            <Button Text="ĐĂNG KÝ"
+                                    x:Name="signIn"
+                                    Style="{StaticResource NormalFont}" 
+                                    BackgroundColor="Red" 
+                                    TextColor="White" 
+                                    CornerRadius="30"
+                                    Clicked="signIn_Clicked"/>
+                            <Label TextColor="Black" FontSize="30"></Label>
+                            
+                            <StackLayout HorizontalOptions="CenterAndExpand">
+                                <Label Text="Bạn đã có tài khoản ?" Style="{StaticResource NormalFont}" TextColor="Black" FontSize="Small"/>
+                                <Button x:Name="cmdSigup" Clicked="cmdSigup_Clicked"
+                                        Style="{StaticResource BoldFont}"
+                                        Text="Đăng nhập" TextColor="Red" BackgroundColor="Transparent" FontAttributes="Bold" FontSize="Small"/>
+                            </StackLayout>
+
+                        </StackLayout>
+
+
+                    </StackLayout>
+
+                </Frame>
+            </StackLayout>
+        </Grid>
+    </StackLayout>
+</ContentPage>

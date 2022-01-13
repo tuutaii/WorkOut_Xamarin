@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="WorkOutApp.ExerciceDetail"
+             BackgroundColor="White"  
+             xmlns:local ="clr-namespace:WorkOutApp.Models"
+             xmlns:control ="clr-namespace:ProgressRingControl.Forms.Plugin;assembly=ProgressRing.Forms.Plugin">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem x:Name="addToFav" IconImageSource="heartIcon"></ToolbarItem>
+    </ContentPage.ToolbarItems>
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <local:ValueProgressBarConverter x:Key="ValueProgressBar" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    
+    <ContentPage.Content>
+        <StackLayout>
+            <ListView x:Name="lstDetail" RowHeight="250" HasUnevenRows="True">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Padding="0" >
+                                <Image HeightRequest="300" Source="{Binding HINHANH}"
+                                       IsAnimationPlaying="True"
+                                       Aspect="AspectFit"
+                                       Margin="10"></Image>
+                                <Label Text="{Binding TENBAITAP}"                                        
+                                       HorizontalTextAlignment="Center"
+                                       Style="{StaticResource TitleFont}"
+                                       FontSize="30"
+                                       TextColor="Black" >
+                                    
+                                </Label>
+
+                                <Label Text="{Binding MOTABAITAP}" 
+                                       Style="{StaticResource NormalFont}"
+                                       Margin="15"
+                                       FontSize="15"
+                                       TextColor="Black" >
+                                </Label> 
+                                
+                                <Label Text="{Binding TACDUNG}" 
+                                       Style="{StaticResource NormalFont}"
+                                       Margin="15"
+                                       FontSize="15"
+                                       TextColor="Black" >
+                                </Label>
+
+                                <StackLayout Padding="0" 
+                                             HorizontalOptions="Center">
+                                    <Label Text="LƯỢNG CALO TIÊU THỤ( calo ) :" 
+                                           Style="{StaticResource BoldFont}"
+                                           FontSize="20"
+                                           TextColor="Black"></Label>
+                                </StackLayout>
+
+                                <Label Text="{Binding LUONGCALOTIEUTHU}" 
+                                       Style="{StaticResource NormalFont}"
+                                       Margin="15"
+                                       FontSize="15"
+                                       TextColor="Black" >
+                                </Label>
+
+                                <StackLayout Padding="0" 
+                                             HorizontalOptions="Center">
+                                    <Label Text="THỜI GIAN BÀI TẬP( giây ) :" 
+                                           Style="{StaticResource BoldFont}"
+                                           FontSize="20"
+                                           TextColor="Black"></Label>
+                                </StackLayout>
+                                
+                            </StackLayout>
+                           
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
+            <Frame Padding="0">
+                <StackLayout Margin="50">
+                    <Grid VerticalOptions="Center" Margin="0,0,0,40">
+                        <control:ProgressRing HeightRequest="90" 
+                              RingProgressColor="#2b70f0" 
+                              Scale="2" WidthRequest="90" 
+                              RingThickness="5"  
+                              Progress="{Binding ProgressValue , Converter={StaticResource ValueProgressBar},Mode=TwoWay}"/>
+                        <StackLayout VerticalOptions="CenterAndExpand">
+                            <Label FontAttributes="Bold" 
+                                   FontSize="20" 
+                                   VerticalOptions="CenterAndExpand"
+                                   HorizontalOptions="CenterAndExpand" 
+                                   TextColor="Black" 
+                                   Text="{Binding ProgressValue, StringFormat='{0}'}"/>
+                            <Label Text="Sec" 
+                                   HorizontalTextAlignment="Center" 
+                                   TextColor="Black" 
+                                   FontSize="15"
+                                   VerticalTextAlignment="Center"/> 
+                        </StackLayout>
+                    </Grid>
+
+                    <Button x:Name="cmdStart"                          
+                            Text="BẮT ĐẦU " TextColor="White" 
+                            CornerRadius="30" BackgroundColor="#d90102" 
+                            FontAttributes="Bold" 
+                            FontSize="Small"
+                            Clicked="cmdStart_Clicked"/>
+            </StackLayout>
+            </Frame>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

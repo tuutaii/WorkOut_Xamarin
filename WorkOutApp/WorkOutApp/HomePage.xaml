@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Shell xmlns="http://xamarin.com/schemas/2014/forms"
+                xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                x:Class="WorkOutApp.HomePage"
+                xmlns:views="clr-namespace:WorkOutApp"
+               FlyoutBackgroundImage="loginbanner2"
+               FlyoutBackgroundImageAspect="AspectFill"
+               Title="WORKOUT APP">
+
+
+    <Shell.FlyoutHeaderTemplate>
+        <DataTemplate>            
+            <Grid HeightRequest="170"
+                  BackgroundColor="LightBlue">
+                <Image Source="backgroud3" Aspect="AspectFill" ></Image>
+            </Grid>            
+        </DataTemplate>
+    </Shell.FlyoutHeaderTemplate>
+
+    <Shell.FlyoutFooterTemplate>
+        <DataTemplate>
+            <Grid HeightRequest="100"
+                  BackgroundColor="Black">
+                <Label Text="Liên hệ " Style="{StaticResource TitleFont}" FontSize="23" HorizontalOptions="StartAndExpand" Margin="10" ></Label>
+                <Label Text="email: abcdef@gmail.com " Style="{StaticResource TitleFont}" FontSize="17" HorizontalOptions="Start" VerticalOptions="Center" Margin="10" ></Label>
+                <Label Text="number: 90101010101 " Style="{StaticResource TitleFont}" FontSize="17" HorizontalOptions="Start" VerticalOptions="End" Margin="10" ></Label>
+            </Grid>
+
+        </DataTemplate>
+    </Shell.FlyoutFooterTemplate>
+
+    <!--<ShellItem Route="login" FlyoutItemIsVisible="False">
+        <ShellContent ContentTemplate="{DataTemplate views:LoginPage}"></ShellContent>        
+    </ShellItem>-->
+
+ 
+    <FlyoutItem FlyoutDisplayOptions="AsMultipleItems"               
+                Shell.TabBarIsVisible="False" 
+                >
+        
+        <Tab Title="BÀI TẬP THEO DANH MỤC" 
+             Icon="HomeIcon.png">
+            <ShellContent ContentTemplate="{DataTemplate views:HotExerciesPage}" />
+        </Tab> 
+        
+        <Tab Title="BÀI TẬP THEO MỨC ĐỘ"
+             Icon="Profileicon.jpg" >
+            <ShellContent  ContentTemplate="{DataTemplate views:CategoryPage}" />
+        </Tab>
+        
+        <Tab Title="TẤT CẢ BÀI TẬP"
+             Icon="Profileicon.jpg" >
+            <ShellContent  ContentTemplate="{DataTemplate views:AllExercicesPage }" />
+        </Tab> 
+        
+        <Tab Title="DÀNH CHO BẠN"
+             Icon="TodoIcon.png">
+            <ShellContent ContentTemplate="{DataTemplate views:CategoryPage}" />
+        </Tab>
+
+        <Tab Title="KHÁM PHÁ"
+             Icon="TodoIcon.png">
+            <ShellContent ContentTemplate="{DataTemplate views:DiscoveryPage}" />
+        </Tab>
+
+        <Tab Title="ĐĂNG XUẤT"
+             Icon="TodoIcon.png"
+             Route="login">
+            <ShellContent ContentTemplate="{DataTemplate views:LoginPage}" />
+        </Tab>
+
+    </FlyoutItem>   
+
+
+</Shell>

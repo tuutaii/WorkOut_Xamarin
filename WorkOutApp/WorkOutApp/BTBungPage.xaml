@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="WorkOutApp.BTBungPage"
+             Title="Bài Tập Vùng Bụng"
+             BackgroundColor="DarkGray">
+    <ScrollView>
+        <StackLayout>
+            <ListView x:Name="lst_BTBung" 
+                      ItemSelected="lst_BTBung_ItemSelected"      
+                      MinimumHeightRequest="300" RowHeight="150" Margin="10" >
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Grid Margin="0,0,0,10" 
+                                                  BackgroundColor="White">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition ></RowDefinition>
+                                    <RowDefinition ></RowDefinition>
+                                </Grid.RowDefinitions>
+
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"></ColumnDefinition>
+                                    <ColumnDefinition Width="2*"></ColumnDefinition>
+                                </Grid.ColumnDefinitions>
+
+                                <Image Source="{Binding HINHANH}" Grid.Row="0" Aspect="AspectFit" Grid.Column="0" Grid.RowSpan="2" ></Image>
+
+                                <Label Text="{Binding TENBAITAP}"
+                                                       Grid.Row="0" Grid.Column="1"                                                      
+                                                       TextColor="Black"
+                                                       Margin="20,20,0,2"
+                                                       Style="{StaticResource TitleFont}"
+                                                       FontSize="25"
+                                                       FontAttributes="Bold"
+                                                       HorizontalOptions="StartAndExpand">
+                                </Label>
+
+                                <Label Text="{Binding MOTABAITAP}" 
+                                                       Grid.Row="1" Grid.Column="1" 
+                                                       Style="{StaticResource NormalFont}" 
+                                                       TextColor="Black"
+                                                       Margin="20,0,20,10"
+                                                       FontSize="15"                                                       
+                                                       HorizontalOptions="StartAndExpand">
+
+                                </Label>
+                            </Grid>
+
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

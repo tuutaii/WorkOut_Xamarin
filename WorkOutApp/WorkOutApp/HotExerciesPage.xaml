@@ -1,0 +1,206 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="WorkOutApp.HotExerciesPage"
+             BackgroundColor="White"
+             Title="BÀI TẬP THEO DANH MỤC">
+    <ScrollView>
+        <StackLayout>
+            <Grid>
+                <StackLayout Padding="0"  HorizontalOptions="FillAndExpand">
+                    <Frame HeightRequest="250" Padding="0" Margin="0">
+                        <Image Source="backgroud2" Aspect="AspectFill" Margin="0"/>
+                    </Frame>
+                    <Frame HeightRequest="30" WidthRequest="100" 
+                           HorizontalOptions="StartAndExpand"  
+                           BackgroundColor="#d8202c"
+                           Margin="10"
+                           CornerRadius="10"
+                           Padding="10">
+                        <Label Text="TẬP BỤNG" Style="{StaticResource BoldFont}" 
+                               FontSize="15" TextColor="White"
+                               HorizontalOptions="Center"></Label>
+                    </Frame>
+
+                    <Frame HeightRequest="150" CornerRadius="10" Margin="15" Padding="0">
+                        <StackLayout>
+                            <Grid>
+                                <Image Source="bellyEx" Aspect="AspectFill"></Image>
+                                <Label Text="CÁC BÀI TẬP BỤNG" 
+                                       Style="{StaticResource TitleFont}" 
+                                       TextColor="White"
+                                       HorizontalOptions="Start"
+                                       VerticalOptions="Start"
+                                       Margin="10"></Label>
+
+                                <Label Text="20 LẦN/ 1 LẦN TẬP" 
+                                       Style="{StaticResource NormalFont}" 
+                                       TextColor="White"
+                                       FontSize="15"
+                                       HorizontalOptions="Start"
+                                       VerticalOptions="Center"
+                                       Margin="10"></Label>
+
+                                <Button Text="Xem thêm  >>"
+                                        x:Name="cmdTapBung"
+                                       TextColor="White"
+                                        BackgroundColor="Transparent"
+                                       HorizontalOptions="End"
+                                       VerticalOptions="EndAndExpand"
+                                       FontAttributes="Italic"
+                                       FontSize="15" 
+                                       Margin="10"
+                                        Clicked="cmdTapBung_Clicked"></Button>
+                            </Grid>
+                        </StackLayout>
+                    </Frame>
+                    <Label Text="Bài tập đơn giản đến nâng cao giúp săn  chắc vùng bụng và các cơ liên quan."
+                           Style="{StaticResource NormalFont}" FontSize="15" Margin="15,0,10,20"
+                           TextColor="Black"></Label>
+
+                    <Frame HeightRequest="30" WidthRequest="100" 
+                           HorizontalOptions="StartAndExpand"  
+                           BackgroundColor="#d8202c"
+                           Margin="10"
+                           CornerRadius="10"
+                           Padding="10">
+                        <Label Text="TẬP CHÂN" Style="{StaticResource BoldFont}" 
+                               FontSize="15" TextColor="White"
+                               HorizontalOptions="Center"></Label>
+                    </Frame>
+
+                    <Frame HeightRequest="150" CornerRadius="10" Margin="15" Padding="0">
+                        <StackLayout>
+                            <Grid>
+                                <Image Source="legEx" Aspect="AspectFill"></Image>
+                                <Label Text="CÁC BÀI TẬP VỀ CHÂN" 
+                                       Style="{StaticResource TitleFont}" 
+                                       TextColor="White"
+                                       HorizontalOptions="Start"
+                                       VerticalOptions="Start"
+                                       Margin="10"></Label>
+
+                                <Label Text="100 LẦN/ 1 LẦN TẬP" 
+                                       Style="{StaticResource NormalFont}" 
+                                       TextColor="White"
+                                       FontSize="15"
+                                       HorizontalOptions="Start"
+                                       VerticalOptions="Center"
+                                       Margin="10"></Label>
+
+                                <Button Text="Xem thêm  >>" 
+                                        x:Name="BTChan"
+                                       TextColor="White"
+                                        BackgroundColor="Transparent"
+                                       HorizontalOptions="End"
+                                       VerticalOptions="EndAndExpand"
+                                       FontAttributes="Italic"
+                                       FontSize="15" 
+                                       Margin="10"
+                                       Clicked="BTChan_Clicked"></Button>
+                            </Grid>
+                        </StackLayout>
+                    </Frame>
+                    <Label Text="Các động tác chống đẩy giúp săn chắc vùng bắp chân và đùi."
+                           Style="{StaticResource NormalFont}" FontSize="15" Margin="15,0,0,20"
+                           TextColor="Black"></Label>
+
+                    <Frame HeightRequest="30" WidthRequest="100" 
+                           HorizontalOptions="StartAndExpand"  
+                           BackgroundColor="#d8202c"
+                           Margin="10"
+                           CornerRadius="10"
+                           Padding="10">
+                        <Label Text="TẬP NGỰC" Style="{StaticResource BoldFont}" 
+                               FontSize="15" TextColor="White"
+                               HorizontalOptions="Center"></Label>
+                    </Frame>
+
+                    <Frame HeightRequest="150" Margin="15" CornerRadius="10" Padding="0">
+                        <StackLayout>
+                            <Grid>
+                                <Image Source="chestEx" Aspect="AspectFill"></Image>
+                                <Label Text="CÁC BÀI TẬP NGỰC" 
+                                       Style="{StaticResource TitleFont}" 
+                                       TextColor="White"
+                                       HorizontalOptions="Start"
+                                       VerticalOptions="Start"
+                                       Margin="10"></Label>
+
+                                <Label Text="2 PHÚT/ 1 LẦN TẬP" 
+                                       Style="{StaticResource NormalFont}" 
+                                       TextColor="White"
+                                       FontSize="15"
+                                       HorizontalOptions="Start"
+                                       VerticalOptions="Center"
+                                       Margin="10"></Label>
+
+                                <Button Text="Xem thêm  >>"  
+                                        x:Name="cmdNguc"
+                                       TextColor="White"
+                                        BackgroundColor="Transparent"
+                                       HorizontalOptions="End"
+                                       VerticalOptions="EndAndExpand"
+                                       FontAttributes="Italic"
+                                       FontSize="15" 
+                                       Margin="10"
+                                       Clicked="cmdNguc_Clicked"></Button>
+                            </Grid>
+                        </StackLayout>
+                    </Frame>
+                    <Label Text="Các động tác chống đẩy giúp săn chắc vùng bắp tay, cơ vai và ngực."
+                           Style="{StaticResource NormalFont}" FontSize="15" Margin="15,0,0,10"
+                           TextColor="Black"></Label>
+
+                    <Frame HeightRequest="30" WidthRequest="100" 
+                           HorizontalOptions="StartAndExpand"  
+                           BackgroundColor="#d8202c"
+                           Margin="10"
+                           CornerRadius="10"
+                           Padding="10">
+                        <Label Text="TẬP TAY" Style="{StaticResource BoldFont}" 
+                               FontSize="15" TextColor="White"
+                               HorizontalOptions="Center"></Label>
+                    </Frame>
+
+                    <Frame HeightRequest="150" Margin="15" CornerRadius="10" Padding="0">
+                        <StackLayout>
+                            <Grid>
+                                <Image Source="handEx" Aspect="AspectFill"></Image>
+                                <Label Text="CÁC BÀI TẬP TAY" 
+                                       Style="{StaticResource TitleFont}" 
+                                       TextColor="White"
+                                       HorizontalOptions="Start"
+                                       VerticalOptions="Start"
+                                       Margin="10"></Label>
+
+                                <Label Text="2 PHÚT/ 1 LẦN TẬP" 
+                                       Style="{StaticResource NormalFont}" 
+                                       TextColor="White"
+                                       FontSize="15"
+                                       HorizontalOptions="Start"
+                                       VerticalOptions="Center"
+                                       Margin="10"></Label>
+
+                                <Button Text="Xem thêm  >>"  
+                                        x:Name="cmdtay"
+                                       TextColor="White"
+                                        BackgroundColor="Transparent"
+                                       HorizontalOptions="End"
+                                       VerticalOptions="EndAndExpand"
+                                       FontAttributes="Italic"
+                                       FontSize="15" 
+                                       Margin="10"
+                                       Clicked="cmdtay_Clicked"></Button>
+                            </Grid>
+                        </StackLayout>
+                    </Frame>
+                    <Label Text="Các động tác chống đẩy giúp săn chắc vùng bắp tay, cơ vai và ngực."
+                           Style="{StaticResource NormalFont}" FontSize="15" Margin="15,0,0,10"
+                           TextColor="Black"></Label>
+                </StackLayout>
+
+            </Grid>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

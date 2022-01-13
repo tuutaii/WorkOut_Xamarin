@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="WorkOutApp.DiscoveryDetail"
+             BackgroundColor="WhiteSmoke"
+             Title="TIN TỨC ">
+    <StackLayout>
+        <Grid>
+            <ScrollView>
+            <StackLayout Padding="10">
+                <CarouselView x:Name="carouselView" IndicatorView="IndicatorView"
+                         HeightRequest="200">
+                    <CarouselView.ItemTemplate>
+                        <DataTemplate>
+                            <Image Source="{Binding Url}" Aspect="AspectFill"></Image>
+                        </DataTemplate>
+                    </CarouselView.ItemTemplate>
+                </CarouselView>
+                <IndicatorView x:Name="IndicatorView"
+                           IndicatorColor="DarkGray"
+                           SelectedIndicatorColor="Gray"
+                           IndicatorSize="10"
+                           VerticalOptions="Center">
+                </IndicatorView>
+                <Label Text="California Fitness and Yoga có nhiều biện pháp phòng dịch khi mở cửa trở lại" 
+                       Style="{StaticResource TitleFont }"
+                       Padding="0,10,0,0"
+                       TextColor="Black" 
+                       HorizontalOptions="Start">                    
+                </Label>
+                <Label Text="Ngày đăng: 01/01/2022"    
+                       FontSize="15"
+                       FontAttributes="Italic"
+                       TextColor="Gray"
+                       Padding="0,10,0,0"
+                       HorizontalOptions="Start">
+                    
+                </Label>
+                <Frame HeightRequest="15" WidthRequest="120"    
+                       HorizontalOptions="StartAndExpand"  
+                       BackgroundColor="Black"
+                       Margin="10"
+                       CornerRadius="10"
+                       Padding="5">
+                    <Label Text="TIN MỚI CẬP NHẬT " Style="{StaticResource BoldFont}" 
+                               FontSize="10" TextColor="White"
+                               HorizontalOptions="Center"></Label>
+                </Frame>
+                <Label Text="Tất cả nhân viên, khách hàng đến California Fitness and Yoga xuất trình thẻ xanh đã tiêm hai mũi vaccine, tuân thủ quy tắc phòng dịch theo Bộ Y tế."
+                       FontSize="18"
+                       Padding="0,10,0,0"
+                       TextColor="Black"
+                       HorizontalOptions="Start">
+
+                </Label>
+                <Label Text="Bắt nhịp với cuộc sống bình thường mới tại TP HCM, California Fitness and Yoga, nhiều đơn vị kinh doanh phòng tập thể dục thể hình khác quay trở lại hoạt động, phục vụ hội viên sau một thời gian dài giãn cách tại nhà  "
+                       TextColor="Black"
+                       FontSize="18"
+                       Padding="0,10,0,0"
+                       HorizontalOptions="Start">
+
+                </Label>
+                <Image Margin="20" Source="news4.jfif"></Image>
+                <Label Text="Hình ảnh minh họa"    
+                       FontSize="15"
+                       FontAttributes="Italic"
+                       TextColor="Gray"
+                       HorizontalOptions="Center">
+                </Label>
+                    <Label Text="Ông Dane Fort, Tổng Giám đốc FLG Việt Nam, tập đoàn sở hữu thương hiệu thể dục thể hình California Fitness and Yoga chia sẻ, việc ngành thể dục thể hình được mở cửa trở lại là một tin đáng mừng cho cả thành phố. Phòng tập sẵn sàng chào đón các hội viên trở lại, đồng thời tiếp tục sứ mệnh rèn luyện sức khỏe, cải thiện chất lượng cuộc sống cho người dân Việt."
+                       FontSize="18"
+                       Padding="0,10,0,0"
+                       TextColor="Black"
+                       HorizontalOptions="Start">
+
+                    </Label>
+                    <Label Text="Sau một thời gian dài ở nhà, chúng tôi hiểu rằng, hội viên mong đợi hai điều ở California. Họ đang tìm các phương pháp nhằm nâng cao hệ miễn dịch, có thể phòng ngừa Covid-19 trong tương lai. Ngoài ra, khi bước vào giai đoạn bình thường mới, chúng tôi tin rằng các hội viên đều muốn thay đổi thói quen hằng ngày sau thời gian dài gò bó giãn cách tại nhà, ông Dane cho biết thêm."
+                       TextColor="Black"
+                       FontSize="18"
+                       Padding="0,10,0,0"
+                       HorizontalOptions="Start">
+                    </Label>
+                    <Image Margin="20" Source="chestEx"></Image>
+                    <Label Text="Hình ảnh minh họa"    
+                       FontSize="15"
+                       FontAttributes="Italic"
+                       TextColor="Gray"
+                       HorizontalOptions="Center">
+                    </Label>
+                    <Label Text="Hiện đại dịch vẫn chưa có dấu hiệu chấm dứt, việc đảm bảo sự an toàn cho những hội viên luôn là mục tiêu hàng đầu của tất cả câu lạc bộ thể dục thể hình. Đại diện California Fitness and Yoga cho biết, thương hiệu tuân thủ nghiêm ngặt các quy định mà UBND thành phố đề ra, đồng thời áp dụng hàng loạt biện pháp đảm bảo vệ sinh, an toàn tại các câu lạc bộ của trung tâm theo Tiêu chuẩn California. Bộ tiêu chuẩn này được trung tâm thể dục thể hình hàng đầu Việt Nam đặt ra kể từ lần đầu tiên đại dịch xuất hiện, tiếp tục cải tiến, duy trì cho đến nay."
+                       FontSize="18"
+                       Padding="0,10,0,0"
+                       TextColor="Black"
+                       HorizontalOptions="Start">
+
+                    </Label>
+                    <Label Text="Theo đó, tất cả những ai ra vào câu lạc bộ đều phải xuất trình thẻ xanh đã tiêm hai mũi vaccine hoặc giấy xác nhận đã khỏi bệnh trong vòng 6 tháng. Ngoài việc bắt buộc đeo khẩu trang, tuân thủ quy định 5K, nhân viên, hội viên đều phải kiểm tra thân nhiệt trước khi vào câu lạc bộ. Các lối ra vào trung tâm California Fitness and Yoga phân luồng riêng biệt nhằm tránh tối đa việc tiếp xúc gần. California cho biết, tất cả các hoạt động ra vào câu lạc bộ đều ghi lại nhằm phục vụ cho công tác truy vết nếu cần."
+                       TextColor="Black"
+                       FontSize="18"
+                       Padding="0,10,0,0"
+                       HorizontalOptions="Start">
+                    </Label>
+
+
+
+
+
+                </StackLayout>
+
+            </ScrollView>
+
+        </Grid>
+        
+    </StackLayout>
+   
+</ContentPage>

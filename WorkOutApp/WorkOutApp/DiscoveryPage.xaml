@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="WorkOutApp.DiscoveryPage"
+             BackgroundColor="WhiteSmoke"
+             Title="DISCOVERY PAGE">
+    <ScrollView>
+        <StackLayout>
+            <Grid>
+                
+                <StackLayout Padding="0" Margin="0" HorizontalOptions="FillAndExpand">
+                    <Label Text="TIN TỨC" Style="{StaticResource TitleFont1}" 
+                           FontSize="30" TextColor="Black" HorizontalOptions="Center" Margin="10"></Label>
+                    <Frame HeightRequest="200"   Padding="0">
+                        <StackLayout>
+                            <Grid>
+                                <Image Source="banner" Aspect="AspectFill"></Image>
+                                <Label Text="HEALTH AND FITNESS STARS" 
+                                       Style="{StaticResource TitleFont}" 
+                                       TextColor="White"
+                                       HorizontalOptions="Start"
+                                       VerticalOptions="End"
+                                       Margin="10"></Label>
+
+                                <Button Text="Xem thêm  >>"  
+                                       TextColor="White"
+                                        BackgroundColor="Transparent"
+                                       HorizontalOptions="End"
+                                       VerticalOptions="EndAndExpand"
+                                       FontAttributes="Italic"
+                                       FontSize="15" 
+                                       Margin="10"></Button>
+                            </Grid>
+                        </StackLayout>
+                    </Frame>
+                    <Label Text="Add new tools to Today and track sleep, heart rate weright and more."
+                           Style="{StaticResource NormalFont}" FontSize="15" Margin="15,0,0,20"
+                           TextColor="Black"></Label>
+
+                    <Frame HeightRequest="200"  Padding="0">
+                        <StackLayout>
+                            <Grid>
+                                <Image Source="backgroud7" Aspect="AspectFill"></Image>
+                                <Label Text="GUIDED PROGRAMS" 
+                                       Style="{StaticResource TitleFont}" 
+                                       TextColor="White"
+                                       HorizontalOptions="Start"
+                                       VerticalOptions="End"
+                                       Margin="10"></Label>
+
+                                <Button 
+                                       x:Name="cmdSeemore" 
+                                       Text="Xem thêm  >>"  
+                                       TextColor="White"
+                                       BackgroundColor="Transparent"
+                                       HorizontalOptions="End"
+                                       VerticalOptions="EndAndExpand"
+                                       FontAttributes="Italic"
+                                       FontSize="15" 
+                                       Margin="10"
+                                       Clicked="cmdSeemore_Clicked"
+                                    ></Button>
+                            </Grid>
+                        </StackLayout>
+                    </Frame>
+                    <Label Text="Add new tools to Today and track sleep, heart rate weright and more."
+                           Style="{StaticResource NormalFont}" FontSize="15" Margin="15,0,0,20"
+                           TextColor="Black"></Label>
+
+
+                    <Frame HeightRequest="200"  Padding="0">
+                        <StackLayout>
+                            <Grid>
+                                <Image Source="loginbanner1" Aspect="AspectFill"></Image>
+                                <Label Text="5 WAYS TO MASTER YOUR BODY " 
+                                       Style="{StaticResource TitleFont}" 
+                                       TextColor="White"
+                                       HorizontalOptions="Start"
+                                       VerticalOptions="End"
+                                       Margin="10"></Label>
+
+                                <Button Text="Xem thêm  >>"  
+                                       TextColor="White"
+                                        BackgroundColor="Transparent"
+                                       HorizontalOptions="End"
+                                       VerticalOptions="EndAndExpand"
+                                       FontAttributes="Italic"
+                                       FontSize="15" 
+                                       Margin="10"></Button>
+                            </Grid>
+                        </StackLayout>
+                    </Frame>
+                    <Label Text="Add new tools to Today and track sleep, heart rate weright and more."
+                           Style="{StaticResource NormalFont}" FontSize="15" Margin="15,0,0,20"
+                           TextColor="Black"></Label>
+
+                    <Frame HeightRequest="200"  Padding="0">
+                        <StackLayout>
+                            <Grid>
+                                <Image Source="backgroud1" Aspect="AspectFill"></Image>
+                                <Label Text="YOGA FOR PEOPLE" 
+                                       Style="{StaticResource TitleFont}" 
+                                       TextColor="White"
+                                       HorizontalOptions="Start"
+                                       VerticalOptions="End"
+                                       Margin="10"></Label>
+
+                                <Button Text="Xem thêm  >>"  
+                                       TextColor="White"
+                                        BackgroundColor="Transparent"
+                                       HorizontalOptions="End"
+                                       VerticalOptions="EndAndExpand"
+                                       FontAttributes="Italic"
+                                       FontSize="15" 
+                                       Margin="10"></Button>
+                            </Grid>
+                        </StackLayout>
+                    </Frame>
+                    <Label Text="Add new tools to Today and track sleep, heart rate weright and more."
+                           Style="{StaticResource NormalFont}" FontSize="15" Margin="15,0,0,0"
+                           TextColor="Black"></Label>
+                </StackLayout>
+
+            </Grid>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

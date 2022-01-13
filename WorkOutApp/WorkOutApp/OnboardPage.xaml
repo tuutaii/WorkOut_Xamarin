@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="WorkOutApp.OnboardPage"
+             NavigationPage.HasNavigationBar="false"
+              BackgroundImageSource="loginbanner1.jfif">
+    <StackLayout VerticalOptions="EndAndExpand" Margin="0,0,0,30">
+        <Grid >
+            <StackLayout Padding="0"  HorizontalOptions="FillAndExpand" VerticalOptions="EndAndExpand">
+                <Label Text="CHÀO MỪNG BẠN ĐẾN VỚI"                      
+                       Style="{StaticResource NormalFont}"
+                       HorizontalOptions="Center" 
+                       FontSize="20" VerticalOptions="Center" 
+                       HorizontalTextAlignment="Center" 
+                       TextColor="White"></Label>
+                
+                <Label Text="WORKOUT APP " 
+                       Style="{StaticResource TitleFont}"
+                       HorizontalOptions="Center" 
+                       FontSize="60" VerticalOptions="Center"
+                       HorizontalTextAlignment="Center" 
+                       TextColor="White">
+                    
+                </Label>
+
+                <Label Text="CÁC KẾ HOẠCH ĐÀO TẠO CÁ NHÂN TRỰC TUYẾN TỐI ƯU" 
+                       Style="{StaticResource NormalFont}"
+                       HorizontalOptions="Center" 
+                       FontSize="10" VerticalOptions="Center"
+                       HorizontalTextAlignment="Center" 
+                       TextColor="White">
+                    
+                </Label>
+                
+                <Frame BackgroundColor="Transparent" 
+                       HorizontalOptions="CenterAndExpand"
+                       BorderColor="White" 
+                       Padding="0"
+                       CornerRadius="10" WidthRequest="300" HeightRequest="60">
+                    <Button x:Name="cmdStart_onboard"                      
+                        Text="ĐĂNG NHẬP NGAY"
+                        Style="{StaticResource NormalFont}"
+                         BackgroundColor="Transparent"
+                        TextColor="White" 
+                        Clicked="cmdStart_onboard_Clicked"/>
+                </Frame>
+
+
+                <Frame BackgroundColor="Transparent" 
+                       HorizontalOptions="CenterAndExpand"
+                       BorderColor="White" 
+                       Padding="0"
+                       CornerRadius="10" 
+                       HeightRequest="60"
+                       WidthRequest="300"
+                       Margin="20">
+                    <Button    
+                        x:Name="cmdSignUp_onboard"
+                        Text="TẠO MỘT TÀI KHOẢN MỚI"
+                        Style="{StaticResource NormalFont}"
+                         BackgroundColor="#d90102"
+                        TextColor="White" 
+                        Clicked="cmdSignUp_onboard_Clicked"/>
+                </Frame>
+
+            </StackLayout>
+        </Grid>
+    </StackLayout>
+</ContentPage>

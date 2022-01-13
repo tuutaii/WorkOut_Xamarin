@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="WorkOutApp.HotExercicesPageDetail">
+    <ContentPage.Content>
+        <StackLayout>
+            <ListView x:Name="lstHotDetail" RowHeight="250" HasUnevenRows="True">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Padding="0" >
+                                <Image HeightRequest="300" Source="{Binding HINHANH}"
+                                       Aspect="AspectFill"
+                                       Margin="10"></Image>
+                                <Label Text="{Binding TENBAITAP}" 
+                                       Style="{StaticResource BoldFont}"
+                                       FontSize="40"
+                                       TextColor="Black" >
+
+                                </Label>
+
+                                <Label Text="{Binding MOTABAITAP}" 
+                                       Style="{StaticResource NormalFont}"
+                                       Margin="15"
+                                       FontSize="15"
+                                       TextColor="Black" >
+                                </Label>
+
+                                <Label Text="{Binding TACDUNG}" 
+                                       Style="{StaticResource NormalFont}"
+                                       Margin="15"
+                                       FontSize="15"
+                                       TextColor="Black" >
+                                </Label>
+
+                                <StackLayout Padding="0" 
+                                             HorizontalOptions="Center">
+                                    <Label Text="THỜI GIAN BÀI TẬP( giây ) :" 
+                                           Style="{StaticResource NormalFont}"
+                                           FontSize="20"
+                                           TextColor="Black"></Label>
+                                    <Label Text="{Binding THOILUONG}" 
+                                       Style="{StaticResource NormalFont}"
+                                       Margin="15"
+                                       FontSize="15"
+                                       TextColor="Black" >
+                                    </Label>
+                                </StackLayout>
+
+                            </StackLayout>
+
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <StackLayout Margin="50">
+                <Button x:Name="cmdSigup"                                 
+                        Text="START NOW" TextColor="White" 
+                        CornerRadius="30" BackgroundColor="#d90102" 
+                        FontAttributes="Bold" 
+                        FontSize="Small"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

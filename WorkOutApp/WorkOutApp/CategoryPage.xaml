@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="WorkOutApp.CategoryPage"
+             BackgroundColor="WhiteSmoke"
+             Title="BÀI TẬP THEO MỨC ĐỘ">
+    <ScrollView>
+    <StackLayout>
+        <Grid>
+                <StackLayout Padding="0" Margin="0" HorizontalOptions="FillAndExpand">
+                    <Frame HeightRequest="250" Padding="0" Margin="0">
+                        <Image Source="backgroud4" Aspect="AspectFill" Margin="0"/>
+                    </Frame>
+                    <Frame HeightRequest="150" CornerRadius="10" Margin="20" Padding="0">
+                        <StackLayout>
+                            <Grid>
+                                <Image Source="news1" Aspect="AspectFill"></Image>
+                                <Label Text="BÀI TẬP CHO NGƯỜI MỚI" 
+                                       Style="{StaticResource TitleFont}" 
+                                       TextColor="Black"
+                                       HorizontalOptions="Start"
+                                       Margin="10"></Label>
+
+                                <Label Text="Danh sách những bài tập đơn giản cho người mới bắt đầu." 
+                                       Style="{StaticResource NormalFont}" 
+                                       TextColor="White"
+                                       HorizontalOptions="Start"
+                                       VerticalOptions="EndAndExpand"
+                                       FontSize="15"
+                                       WidthRequest="200"
+                                       Margin="10"></Label>
+
+                                <Button x:Name="cmdForNew"
+                                    Text="Xem thêm  >>"  
+                                       TextColor="White"
+                                        BackgroundColor="Transparent"
+                                       HorizontalOptions="End"
+                                       VerticalOptions="EndAndExpand"
+                                       FontAttributes="Italic"
+                                       FontSize="15" 
+                                       Margin="10"
+                                        Clicked="cmdForNew_Clicked"></Button>
+                            </Grid>
+                        </StackLayout>
+                    </Frame>
+
+                    <Frame HeightRequest="150" CornerRadius="10" Margin="20" Padding="0">
+                        <StackLayout>
+                            <Grid>
+                                <Image Source="news2" Aspect="AspectFill"></Image>
+                                <Label Text="BÀI TẬP MỨC TRUNG BÌNH" 
+                                       Style="{StaticResource TitleFont}" 
+                                       TextColor="White"
+                                       HorizontalOptions="Start"
+                                       Margin="10"></Label>
+
+                                <Label Text="Danh sách những bài tập ở mức trung bình ." 
+                                       Style="{StaticResource NormalFont}" 
+                                       TextColor="White"
+                                       HorizontalOptions="Start"
+                                       VerticalOptions="EndAndExpand"
+                                       FontSize="15"
+                                       WidthRequest="200"
+                                       Margin="10"></Label>
+
+                                <Button x:Name="cmdForMedium"
+                                        Text="Xem thêm  >>"  
+                                       TextColor="White"
+                                        BackgroundColor="Transparent"
+                                       HorizontalOptions="End"
+                                       VerticalOptions="EndAndExpand"
+                                       FontAttributes="Italic"
+                                       FontSize="15" 
+                                       Margin="10"
+                                        Clicked="cmdForMedium_Clicked"></Button>
+                            </Grid>
+                        </StackLayout>
+                    </Frame>
+
+
+                    <Frame HeightRequest="150" CornerRadius="10" Margin="20" Padding="0">
+                        <StackLayout>
+                            <Grid>
+                                <Image Source="banner" Aspect="AspectFill"></Image>
+                                <Label Text="BÀI TẬP MỨC NÂNG CAO" 
+                                       Style="{StaticResource TitleFont}" 
+                                       TextColor="White"
+                                       HorizontalOptions="Start"
+                                       Margin="10"></Label>
+
+                                <Label Text="Danh sách những bài tập ở nâng cao." 
+                                       Style="{StaticResource NormalFont}" 
+                                       TextColor="White"
+                                       HorizontalOptions="Start"
+                                       VerticalOptions="EndAndExpand"
+                                       FontSize="15"
+                                       WidthRequest="200"
+                                       Margin="10"></Label>
+
+                                <Button x:Name="cmdForAdv"
+                                        Text="Xem thêm  >>"  
+                                       TextColor="White"
+                                        BackgroundColor="Transparent"
+                                       HorizontalOptions="End"
+                                       VerticalOptions="EndAndExpand"
+                                       FontAttributes="Italic"
+                                       FontSize="15" 
+                                       Margin="10"
+                                        Clicked="cmdForAdv_Clicked"></Button>
+                            </Grid>
+                        </StackLayout>
+                    </Frame>
+
+                    <Frame HeightRequest="150" CornerRadius="10" Margin="20" Padding="0">
+                        <StackLayout>
+                            <Grid>
+                                <Image Source="news4" Aspect="AspectFill"></Image>
+                                <Label Text="BÀI TẬP TẠI NHÀ" 
+                                       Style="{StaticResource TitleFont}" 
+                                       TextColor="White"
+                                       HorizontalOptions="Start"
+                                       Margin="10"></Label>
+
+                                <Label Text="Danh sách những bài tập có thể tập ở nhà." 
+                                       Style="{StaticResource NormalFont}" 
+                                       TextColor="White"
+                                       HorizontalOptions="Start"
+                                       VerticalOptions="EndAndExpand"
+                                       FontSize="15"
+                                       WidthRequest="200"
+                                       Margin="10"></Label>
+
+                                <Button x:Name="cmdForHome"
+                                        Text="Xem thêm  >>"  
+                                       TextColor="White"
+                                        BackgroundColor="Transparent"
+                                       HorizontalOptions="End"
+                                       VerticalOptions="EndAndExpand"
+                                       FontAttributes="Italic"
+                                       FontSize="15" 
+                                       Margin="10"
+                                        Clicked="cmdForHome_Clicked"></Button>
+                            </Grid>
+                        </StackLayout>
+                    </Frame>
+                </StackLayout>
+            
+            </Grid>
+    </StackLayout>
+    </ScrollView>
+</ContentPage>

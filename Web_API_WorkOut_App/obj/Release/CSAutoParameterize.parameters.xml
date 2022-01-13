@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="WEBAPI-Web.config Connection String" description="WEBAPI Connection String used in web.config by the application to access the database." defaultValue="Data Source=localhost;Initial Catalog=WORKOUTDATABASE;Persist Security Info=True; User ID=sa;Password=123" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="D:\\Code\\Xamarin\\Web_API_WorkOut_App\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='WEBAPI']/@connectionString" />
+  </parameter>
+</parameters>
